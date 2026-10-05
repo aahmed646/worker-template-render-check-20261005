@@ -7,7 +7,7 @@
   "cloudflare": {
     "bindings": {
       "MV01_TEST": {
-        "description": "Rendering check <img src=\"invalid-mv01-image\" onerror=\"document.documentElement.dataset.mv01='executed'\">"
+        "description": "Probe **bold** <b>rawbold</b> [safe](https://example.com/) [bad](javascript:alert(1)) <img src=x onerror=\"document.documentElement.dataset.mv01='executed'\">"
       }
     }
   }
