@@ -1,0 +1,14 @@
+{
+  "name": "worker-template-render-check-20261005",
+  "private": true,
+  "scripts": {
+    "deploy": "wrangler deploy"
+  },
+  "cloudflare": {
+    "bindings": {
+      "MV01_TEST": {
+        "description": "Rendering check <img src=\"invalid-mv01-image\" onerror=\"document.documentElement.dataset.mv01='executed'\">"
+      }
+    }
+  }
+}
